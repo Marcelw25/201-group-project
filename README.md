@@ -21,6 +21,8 @@ Html, CSS and JavaScript
 
 ## Authors
 
+Marcel Williams
+Oscar Tzintzun
 Andrew Bodey
 
 * **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
