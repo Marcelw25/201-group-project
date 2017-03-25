@@ -31,7 +31,8 @@ barArray.push(new barObject("Tapalaya", "Southern", "4-6pm everyday", 14));
 barArray.push(new barObject("Aalto Lounge", "Snacks, Bar", "5-7pm everyday", 15));
 barArray.push(new barObject("Dots Cafe", "Dinner food", "M-F 2-7pm & 11pm-1am", 16));
 barArray.push(new barObject("Slingshot", "Bar, Pub food", "M-F 3-7pm", 17));
-//-----------------------------
+//-----------------------------M Tu W Th F Sa Su
+
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "200px";
@@ -45,6 +46,7 @@ function closeNav() {
 
 function formSubmit() {
   getElementsByTagName("submit");
+
   function addBar(){
     console.log("add new Bar");
     var barLocation = document.getElementById("barLocationInput").value;
@@ -52,15 +54,29 @@ function formSubmit() {
     var barHours = document.getElementById("barHoursInput").value;
     var barLocation = document.getElementById("barLocationInput").value;
     var positionReference = (barArray.length++);
-  var openBar = barArray.push(new barObject(barLocation, barType,barHours, barLocation, ));
-   console.log(openBar);
+    var openBar = barArray.push(new barObject(barLocation, barType,barHours, barLocation, positionReference));
+    console.log(openBar);
   }
 
 
 };
 
 
+this.tableBuilder = function(tableLocation, arrayDataBuilder) {
+  var body = document.getElementsByClassName(tableLocation)[0];
+  var resultArray = arrayDataBuilder;
+  var row = document.createElement("tr");
+  for (var index = 0; index < resultArray.length; index++) {
+    var cell = document.createElement("td");
+    var cellText = document.createTextNode(resultArray[index]);
+    cell.appendChild(cellText);
+    row.appendChild(cell);
+  };
+  //row added to end of table body
+  body.appendChild(row);
+}
+};
 
 
 
-window.addEventListener("click", formSubmit);
+// window.addEventListener("click", formSubmit);
