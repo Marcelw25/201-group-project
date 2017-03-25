@@ -1,9 +1,6 @@
-*{
-border: 1px red solid;
-}
-
 body {
   font-family: "Lato", sans-serif;
+  border: 1px white solid;
 }
 
 .sidenav {
