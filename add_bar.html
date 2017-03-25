@@ -7,17 +7,25 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Locations</a>
-    <a href="#">Contact</a>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="location.html">Locations</a>
+      <a href="add_bar.html">Add your favorite happy hour</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <hr>
+    <div id="top">
+    <img src="images/BS-logo.svg">
+    <form>
+      <input type="text" placeholder="Search..." required>
+      <input type="button" value="Search">
+    </form>
   </div>
-
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-  <hr>
-
+  <img id="backgr" src="images/BS-Home-with-logo.png">
   <footer>&copy; 2017 BAR SCOUT. ALL RIGHTS RESERVED</footer>
 
 </body>
