@@ -5,6 +5,7 @@
   <title>Bar Scout</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="JS/script.js"></script>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -19,18 +20,78 @@
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
   <hr>
   <div id="top">
-  <img src="images/BS-logo.svg">
-  <form>
-    <input type="text" placeholder="Search by type of food or hours" required>
-    <img id="search" src="images/Search.png">
-  </form>
-</div>
-<img id="backgr" src="images/BS-Home-with-logo.png">
+    <img src="images/BS-logo.svg">
+    <form>
+      <input type="text" placeholder="Search by type of food or hours" required>
+      <img id="search" src="images/Search.png">
+    </form>
+  </div>
+  <img id="backgr" src="images/BS-Home-with-logo.png">
   <!-- Barscout images goes here -->
   <footer>&copy; 2017 BAR SCOUT. ALL RIGHTS RESERVED</footer>
   <script src="JS/data.js"></script>
   <script src="JS/app.js"></script>
 
+  <!-- Carousel -->
+  <div id="carousel-example" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="row">
+      <div class="col-xs-offset-3 col-xs-6">
+        <div class="carousel-inner row-centered col-centered">
+          <div class="item active">
+            <div class="carousel-content">
+              <div>
+                <h2>I love this place</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>Nice place</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>Wouldn't Reccomend</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
 
+        </div>
+      </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</section>
+</div>
+</div>
+</main>
+<script src="bootstrap/jquery-2.2.0.min.js"></script>
+<script src="bootstrap/js/custom.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
