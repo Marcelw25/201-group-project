@@ -51,9 +51,14 @@ hr{
 }
 form {
                 width:500px;
-                height: 50px;
                 margin:50px auto;
-                display:flex;
+                display: flex;
+}
+
+#search{
+height
+
+: 40px;
 
 }
 .search {
@@ -61,13 +66,6 @@ form {
                 background:rgba(50, 50, 50, 0.2);
                 border:0px solid #dbdbdb;
 }
-
-#search{
-  height: 50px;
-}
-
-
-
 .button {
                 position:relative;
                 padding:6px 15px;
@@ -83,7 +81,8 @@ form {
 }
 img{
   height: 225px;
-  display: block;
+  display: grid;
+
 }
 
 #top{
@@ -102,7 +101,11 @@ footer{
 }
 
 input{
-width: 500px;
-background-color: green;
-text-decoration-style: wavy;
+  width: 450px;
+  height: 40px;
 }
+
+.relative{position:relative; width:;}
+.absolute-text{position:absolute; bottom:0; font-size:24px; font-family:"vedana"; background:rgba(251,251,251,0.5);
+padding:; width:80%; text-align:center; margin-left: 100px; margin-bottom: 300px;}
+.absolute-text a{font-size:16px; color:#b92b27;}
