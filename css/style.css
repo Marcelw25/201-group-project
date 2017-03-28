@@ -103,5 +103,6 @@ footer{
 
 input{
 width: 500px;
-
+background-color: green;
+text-decoration-style: wavy;
 }
