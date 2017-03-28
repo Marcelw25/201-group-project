@@ -51,13 +51,23 @@ hr{
 }
 form {
                 width:500px;
+                height: 50px;
                 margin:50px auto;
+                display:flex;
+
 }
 .search {
                 padding:8px 15px;
                 background:rgba(50, 50, 50, 0.2);
                 border:0px solid #dbdbdb;
 }
+
+#search{
+  height: 50px;
+}
+
+
+
 .button {
                 position:relative;
                 padding:6px 15px;
@@ -73,7 +83,7 @@ form {
 }
 img{
   height: 225px;
-  display: grid;
+  display: block;
 }
 
 #top{
@@ -89,4 +99,9 @@ footer{
   height: 40px;
   color: #8EC57B;
   margin-top: 15px;
+}
+
+input{
+width: 500px;
+
 }
