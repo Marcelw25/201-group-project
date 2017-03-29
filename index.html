@@ -3,14 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>Bar Scout</title>
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="JS/script.js"></script>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
-    <a href="locations.html">Locations</a>
+    <a href="location.html">Locations</a>
     <a href="add_bar.html">Add</a>
     <a href="about.html">About</a>
   </div>
@@ -18,10 +20,17 @@
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
   <hr>
   <div id="top">
+    <img src="images/BS-logo.svg">
+    <form>
+      <input type="text" placeholder="Search by type of food or hours" required>
+      <img id="search" src="images/Search.png">
+    </form>
+  </div>
+  <img id="backgr" src="images/BS-Home-with-logo.png">
   <img src="images/BS-logo.svg">
   <form>
     <input type="text" placeholder="Search by type of food or hours" required>
-    <input type="button" value="Search">
+    <img id="search" src="images/Search.png">
   </form>
 </div>
 <img id="backgr" src="images/BS-Home-with-logo.png">
@@ -30,6 +39,235 @@
   <script src="JS/data.js"></script>
   <script src="JS/app.js"></script>
 
+  <!-- Carousel -->
+  <div id="carousel-example" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="row">
+      <div class="col-xs-offset-3 col-xs-6">
+        <div class="carousel-inner row-centered col-centered">
+          <div class="item active">
+            <div class="carousel-content">
+              <div>
+                <h2>Bang Bang PDX</h2>
+                <p>An underrated but great spot, Bang Bang comes from the same folks who bring you the fantastic Aalto Lounge happy hour, but this time it’s Thai-influenced. The food menu is full of tasty Thai drinking snacks, including curries and skewers, but our favorite is the phenomenal wings</p>
+                <br>
+                <p>Happy hour is 5 to 6 p.m., 9:30 p.m. to midnight.</p>
+                <br>
+                <p>4727 NE Fremont St. Portland, OR 97213</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#2</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#3</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#4</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#5</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#6</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#7</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#8</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#9</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#10</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#11</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#12</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#13</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>$14</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#15</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#16</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-content">
+              <div>
+                <h2>#17</h2>
+                <p>Here is a restuarant name</p>
+                <br>
+                <p>Here are the hours</p>
+                <br>
+                <p>Here is a description</p>
+              </div>
+            </div>
+          </div>
 
+
+        </div>
+      </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</section>
+</div>
+</div>
+</main>
+<script src="bootstrap/jquery-2.2.0.min.js"></script>
+<script src="bootstrap/js/custom.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
