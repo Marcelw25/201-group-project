@@ -56,7 +56,10 @@ form {
 }
 
 #search{
-height: 40px;
+height
+
+: 40px;
+
 }
 .search {
                 padding:8px 15px;
@@ -79,6 +82,7 @@ height: 40px;
 img{
   height: 225px;
   display: grid;
+
 }
 
 #top{
@@ -100,3 +104,8 @@ input{
   width: 450px;
   height: 40px;
 }
+
+.relative{position:relative; width:;}
+.absolute-text{position:absolute; bottom:0; font-size:24px; font-family:"vedana"; background:rgba(251,251,251,0.5);
+padding:; width:80%; text-align:center; margin-left: 100px; margin-bottom: 300px;}
+.absolute-text a{font-size:16px; color:#b92b27;}
