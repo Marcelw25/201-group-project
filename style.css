@@ -2,7 +2,6 @@ body {
   font-family: "Lato", sans-serif;
   border: 1px white solid;
 }
-
 .sidenav {
   height: 100%;
   width: 0;
@@ -14,7 +13,6 @@ body {
   transition: 0.5s;
   padding-top: 60px;
 }
-
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -23,11 +21,9 @@ body {
   display: block;
   transition: 0.3s
 }
-
 .sidenav a:hover, .offcanvas a:focus{
   color: #8EC57B;
 }
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -38,7 +34,6 @@ body {
 span{
   color: #BBDEB4;
   float: right;
-
 }
 hr{
   height:10px;
@@ -50,33 +45,29 @@ hr{
   .sidenav a {font-size: 10px;}
 }
 form {
-                width:500px;
-                margin:50px auto;
-                display: flex;
+  width:500px;
+  margin:50px auto;
+  display: flex;
 }
-
 #search{
-height
-
-: 40px;
-
+  height:40px;
 }
 .search {
-                padding:8px 15px;
-                background:rgba(50, 50, 50, 0.2);
-                border:0px solid #dbdbdb;
+  padding:8px 15px;
+  background:rgba(50, 50, 50, 0.2);
+  border:0px solid #dbdbdb;
 }
 .button {
-                position:relative;
-                padding:6px 15px;
-                left:-8px;
-                border:2px solid #207cca;
-                background-color:#207cca;
-                color:#fafafa;
+  position:relative;
+  padding:6px 15px;
+  left:-8px;
+  border:2px solid #207cca;
+  background-color:#207cca;
+  color:#fafafa;
 }
 .button:hover  {
-                background-color:#fafafa;
-                color:#207cca;
+  background-color:#fafafa;
+  color:#207cca;
 
 }
 img{
@@ -105,7 +96,52 @@ input{
   height: 40px;
 }
 
+/*Text on background image*/
 .relative{position:relative; width:;}
 .absolute-text{position:absolute; bottom:0; font-size:24px; font-family:"vedana"; background:rgba(251,251,251,0.5);
 padding:; width:80%; text-align:center; margin-left: 100px; margin-bottom: 300px;}
 .absolute-text a{font-size:16px; color:#b92b27;}
+
+/* Dropdown Button */
+.hoverButtons {
+    background-color: #3e8e41;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: ;
+    cursor: pointer;
+    width:150px;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position:fixed;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.search {
+    display: none;
+    position: absolute;
+    background-color: #414042;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.search a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+
+.searct a:hover {background-color: #8EC57B}
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #8EC57B;
+}
