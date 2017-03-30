@@ -1,4 +1,5 @@
 // This file sets up the event listeners and functions for the javascript funtionality
+
 // This file sets up data for the javascript funtionality
 //-----------------------
 var barArray =[];
@@ -72,6 +73,7 @@ detailArray.push(["This unassuming spot near Foster Burger in Southeast serves $
 // -------------------------------------------
 
 
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "200px";
 }
@@ -79,7 +81,6 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-
 
 
 function formSubmit() {
@@ -117,3 +118,4 @@ function tableBuilder(tableLocation, arrayDataBuilder) {
 
 
 // window.addEventListener("click", formSubmit);
+
